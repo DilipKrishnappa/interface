@@ -1,11 +1,11 @@
-// `include "test.sv"
+ `include "test.sv"
 `include "interface.sv"
 
 module top;
 bit clk;
 
 
-task drv;
+/*task drv;
 
   repeat(10)
 begin
@@ -21,13 +21,13 @@ endtask
 initial
 begin
   drv();
-end
+end */
 initial
   forever #5 clk = ~clk;
 
 
   dff intf(clk);
-  d_flipflop t1(intf.dut);
-//  test t2(intf.tb);
+  d_flipflop t1(intf);
+  test t2(intf);
   endmodule
 

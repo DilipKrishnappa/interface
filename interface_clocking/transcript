@@ -13,35 +13,37 @@
 # //  18 U.S.C. Section 1905.
 # //
 # vsim top 
-# Start time: 17:56:05 on Sep 13,2022
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 00:52:30 on Sep 15,2022
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading sv_std.std
 # Loading work.top(fast)
 # Loading work.d_flipflop(fast)
 add wave -position insertpoint sim:/top/intf/*
 run -all
-# [4]d:x
-# [4]q:x
-# [8]d:0
-# [8]q:0
-# [12]d:1
-# [12]q:0
-# [16]d:1
-# [16]q:1
-# [20]d:1
-# [20]q:1
-# [24]d:1
-# [24]q:1
-# [28]d:1
-# [28]q:1
-# [32]d:1
-# [32]q:1
-# [36]d:0
-# [36]q:0
-# [40]d:1
-# [40]q:0
-# ** Note: $finish    : testbench.sv(19)
-#    Time: 40 ns  Iteration: 0  Instance: /top
+# [5]d:x
+# [5]q:x
+# [15]d:0
+# [15]q:0
+# [25]d:1
+# [25]q:1
+# [35]d:1
+# [35]q:1
+# [45]d:1
+# [45]q:1
+# [55]d:1
+# [55]q:1
+# [65]d:1
+# [65]q:1
+# [75]d:1
+# [75]q:1
+# [85]d:0
+# [85]q:0
+# [95]d:1
+# [95]q:1
+# ** Note: $finish    : test.sv(25)
+#    Time: 95 ns  Iteration: 2  Instance: /top/t2
 # 1
-# Break at testbench.sv line 19
-# Causality operation skipped due to absence of debug database file
+# Break at test.sv line 25
+quit
+# End time: 00:54:10 on Sep 15,2022, Elapsed time: 0:01:40
+# Errors: 0, Warnings: 0

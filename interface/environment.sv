@@ -14,7 +14,7 @@ task run();
 vif.a = 6;
 vif.b =4;
 $display("");
-$display("//INPUT:\ninput a=%0d, input b=%0d", vif.a, vif.b);
+$display("//INPUT:\n %c[0;27m input a=%0d, input b=%0d %cc[0m", vif.a, vif.b);
 $display("");
 #5;
 $display("//OUTPUT:\nMultiplication of a and b,\n output y=%0d\n\t",vif.y);

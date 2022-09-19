@@ -1,6 +1,7 @@
 # vsim top -l top.log -c -do "log -r /*; add wave -r /*; run -all;" -wlf waveform.wlf 
-# Start time: 17:32:11 on Sep 13,2022
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 05:22:45 on Sep 15,2022
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: testbench.sv(32): (vopt-7040) The event edge identifier posedge has no meaning when used with a clocking block and will be ignored.
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -41,7 +42,7 @@
 # [85]q:0
 # [95]d:1
 # [95]q:1
-# ** Note: $finish    : testbench.sv(20)
-#    Time: 95 ns  Iteration: 2  Instance: /top
-# End time: 17:32:12 on Sep 13,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# ** Note: $finish    : test.sv(25)
+#    Time: 95 ns  Iteration: 2  Instance: /top/t2
+# End time: 05:22:46 on Sep 15,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
